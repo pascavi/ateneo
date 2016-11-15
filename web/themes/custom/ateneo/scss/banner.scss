@@ -1,0 +1,89 @@
+.banner{
+  background: no-repeat center center;
+  background-size: cover;
+  min-height:300px;
+  position:relative;
+  margin-bottom:20px;
+}
+
+.path-frontpage .banner{
+  min-height:400px;
+}
+
+.banner__title{
+  margin:0;
+  padding:20px 20px 50px 20px;
+  background:rgba(0,0,0,0.6);
+  position:absolute;
+  color:#FFF;
+  top:0;
+  left:0;
+  right:0;
+
+}
+
+.banner__title h2{
+  font-size:1.8rem;
+  margin:0;
+}
+
+.banner__title p{
+  margin:0;
+}
+
+.banner__credits{
+  position:absolute;
+  bottom:0;
+  right:0;
+  background:rgba(30,30,30,0.9);
+  font-size:0.8rem;
+  color:#FFF;
+  text-decoration:none;
+  padding:3px;
+}
+
+.banner__down{
+  color:#EEE;
+  position:absolute;
+  left:50%;
+  bottom:0px;
+  font-size:2.3rem;
+  transform:translate(-50%,0);
+}
+.banner__down:hover{
+  color:#FFF;
+}
+
+
+@include breakpoint(medium) {
+  .banner__title{
+    background:rgba(30,30,30,0.8);
+    bottom:15%;
+    top:auto;
+    left:auto;
+    right:auto;
+    padding:20px 20px;
+  }
+
+  .banner__down{
+    display:none;
+  }
+
+  .banner__title h2{
+    font-size:2rem;
+    margin:0;
+  }
+
+  .banner__title p{
+    margin:0;
+  }
+}
+
+@include breakpoint(large) {
+
+}
+
+
+
+
+

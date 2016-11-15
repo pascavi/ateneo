@@ -1,0 +1,14 @@
+name: ateneo
+description: Ateneo de Molina.
+base theme: classy
+package: Custom
+type: theme
+version: 1.0
+core: 8.x
+libraries:
+  - ateneo/theme
+  - ateneo/base
+regions:
+  header: 'Header'
+  content: 'Main content'
+  footer: 'Footer'

@@ -1,0 +1,43 @@
+
+.where-when{
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+aside .where-when.row{
+  max-width:450px;
+  margin:0 auto;
+}
+
+.where-when .button:first-child{
+  margin-right:10px;
+}
+
+.where-when .button:last-child{
+  margin-left:10px;
+}
+
+
+@include breakpoint(medium) {
+  aside .where-when.row{
+    max-width: unset;
+  }
+  .button{
+    font-size:1.05rem;
+  }
+}
+
+
+@include breakpoint(large) {
+  aside .where-when.row{
+    max-width:450px;
+    float:right;
+    width:100%;
+  }
+}
+
+
+
+
+

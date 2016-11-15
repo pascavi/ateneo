@@ -1,0 +1,16 @@
+base:
+  version: 1.x
+  js:
+    cdn:
+      https://use.fontawesome.com/3bdb074954.js: {type:external}
+    js/global.js: {}
+
+  css:
+    cdn:
+       https://fonts.googleapis.com/css?family=Sintony:400,700|Hind:600
+    components:
+      css/global.css: {}
+
+  dependencies:
+    - core/drupal
+    - core/jquery

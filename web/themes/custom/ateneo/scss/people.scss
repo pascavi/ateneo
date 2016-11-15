@@ -1,0 +1,60 @@
+
+.person{
+  margin-bottom:30px;
+  font-size:1rem;
+}
+
+.person--just-text{
+  margin-bottom:15px;
+}
+
+.person.medium-12:first-child:last-child{
+  width:100%;
+  max-width:400px;
+  margin:0 auto 30px;
+  float:none;
+}
+
+.person p{
+  margin-bottom:0.4em;
+  font-family: 'Georgia', serif;
+  line-height:1.4em;
+}
+
+.person__image img{
+  border-radius: 50%;
+  max-width:100%;
+  height:auto;
+}
+
+aside .people.row{
+  max-width:450px;
+  margin:0 auto;
+}
+
+.person--just-text .column{
+  max-width: 400px;
+  margin: 0 auto;
+  float:none;
+}
+
+
+@include breakpoint(medium) {
+  aside .people.row{
+    max-width: unset;
+  }
+}
+
+
+@include breakpoint(large) {
+  aside .people.row{
+    max-width:450px;
+    float:right;
+    width:100%;
+  }
+}
+
+
+
+
+

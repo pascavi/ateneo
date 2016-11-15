@@ -1,0 +1,188 @@
+@import 'settings';
+@import 'foundation';
+
+@include foundation-grid;
+@include foundation-visibility-classes;
+@include foundation-button;
+@include foundation-typography;
+
+@import 'header';
+@import 'banner';
+@import 'people';
+@import 'where-when';
+@import 'help-sharing';
+@import 'extra-links';
+@import 'slide-menu';
+@import 'follow-us';
+
+body{
+  font-family: $body-font-family;
+  line-height:$global-lineheight;
+  font-size: $global-font-size;
+/*  background: #CCC;*/
+}
+
+body.no-scroll{
+  overflow: hidden;
+  position: fixed;
+  width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Hind', sans-serif;
+}
+
+
+.page-title{
+  margin-bottom:1em;
+  font-size:2.5rem;
+}
+
+.button{
+  border-radius: 5px;
+}
+
+.button--small{
+  padding: 11px;
+}
+
+.button.secondary{
+  color:$darker-gray;
+}
+
+.button .fa{
+  margin-right:5px;
+}
+
+.messages{
+  background-image:none!important;
+}
+
+.column{
+  box-sizing: border-box;
+}
+
+.content__intro{
+  padding:40px 0 20px;
+  position:relative;
+}
+
+
+#main-content__text{
+  padding-bottom: 3.5em;
+}
+
+
+h1.page-title,h2.page-title{
+  margin-top:1em;
+}
+
+
+@include breakpoint(medium) {
+  .button{
+    font-size:1rem;
+  }
+
+}
+
+
+
+.footer{
+  height:200px;
+  border-top:3px $primary-color solid;
+  box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.3);
+  background:hsla(200,44%,95%,1);
+}
+
+main{
+  padding-bottom:2em;
+}
+
+
+.footer{
+  padding:40px 0 10px;
+}
+
+.footer p{
+  margin:0.5em 0;
+}
+
+.footer h3{
+  color:#456;
+}
+
+.footer a{
+  color:$anchor-color-hover;
+}
+
+.footer a:hover{
+  color:$primary-color;
+}
+
+
+@include breakpoint(medium) {
+  .footer{
+    background:hsla(200,44%,95%,1) url(/themes/custom/ateneo/images/logo_trans_gray.svg) no-repeat right -200px top -150px;
+    background-size: 500px;
+  }
+
+}
+
+@include breakpoint(large) {
+  .footer{
+    background-position: right -130px top -150px
+   /* background-position: right -150px top -170px;
+    background-size: 600px;*/
+  }
+
+}
+
+
+
+.page-node-type-actividad main, .path-frontpage main{
+  padding-bottom:0;
+}
+
+.page-node-type-actividad .page-title{
+  margin-bottom:1em;
+}
+
+.view-actividades .view-header{
+  margin-bottom:1.5em;
+}
+
+.actividad{
+  overflow:hidden;
+  max-width:400px;
+  margin:0 auto 2.5em;
+  float:none;
+}
+
+.actividad h3{
+  margin:0.5em 0 0.2em;
+  line-height:1.2em;
+  font-family: Georgia,serif;
+}
+
+.actividad img{
+  width:100%;
+  height:auto;
+}
+@include breakpoint(medium) {
+  .actividad{
+    float:left;
+  }
+
+  .view-actividades .views-row:nth-child(2n+1){
+    clear:left;
+  }
+}
+
+@include breakpoint(large) {
+  .view-actividades .views-row:nth-child(2n+1){
+    clear:none;
+  }
+  .view-actividades .views-row:nth-child(3n+1){
+    clear:left;
+  }
+}
