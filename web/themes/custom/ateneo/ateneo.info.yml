@@ -12,3 +12,7 @@ regions:
   header: 'Header'
   content: 'Main content'
   footer: 'Footer'
+
+favicon:
+  use_default: 1
+  path: 'favicon.ico'
