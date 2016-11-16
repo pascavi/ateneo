@@ -36,6 +36,8 @@ function ateneo_preprocess_node(&$variables) {
            $variables['content']['actividad']=  $fecha > time() ? 'Próxima Actividad' : format_date($fecha, 'month_year');
            $variables['content']['banner'] = ImageStyle::load('banner')->buildUrl($variables['node']->field_imagen->entity->getFileUri());
            $variables['base_url'] = $GLOBALS['base_url'];
+           $variables['title'] = $variables['node']->title->value;
+          // kint($variables['node']);
            //$variables['content']['share']=  $variables['content']['field_subtitulo'][0]['#plain_text'].' '.$format_date($fecha, 'long');
             //kint($variables['node']);
             $path = urlencode($GLOBALS['base_url'].\Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$variables['node']->id(), 'es'));
