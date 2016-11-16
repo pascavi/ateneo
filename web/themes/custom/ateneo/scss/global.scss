@@ -74,6 +74,10 @@ h1.page-title,h2.page-title{
   margin-top:1em;
 }
 
+main{
+  padding-bottom:2em;
+}
+
 
 @include breakpoint(medium) {
   .button{
