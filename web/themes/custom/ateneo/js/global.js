@@ -74,7 +74,7 @@
 
   Drupal.behaviors.ga = {
     attach: function (context, settings) {
-      $('.js-scroll').click(function (e) {
+      $('.ga-event').click(function (e) {
         var tag = $(this);
         window.dataLayer = window.dataLayer || []
         dataLayer.push({
