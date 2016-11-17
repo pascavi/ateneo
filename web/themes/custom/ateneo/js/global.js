@@ -72,4 +72,21 @@
   };
 
 
+  Drupal.behaviors.ga = {
+    attach: function (context, settings) {
+      $('.js-scroll').click(function (e) {
+        var tag = $(this);
+        window.dataLayer = window.dataLayer || []
+        dataLayer.push({
+          'event': 'ga-event',
+          'category': tag.data('category'),
+          'action': tag.data('action'),
+          'label': tag.data('label')
+        });
+      });
+    }
+  };
+
+
+
 })(jQuery, Drupal);
