@@ -141,15 +141,18 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     </div>
     <div class="column medium-15 large-18">
       <div class="row help-sharing__links">
-        <div class="column small-8 large-12"><a target="_blank" class="help-sharing__link" href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}/node/{{ node.id }}">
+        <div class="column small-8 large-12">
+          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Facebook" data href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <span class="show-for-large">Compártelo en Facebook</span>
           </a></div>
-        <div class="column small-8 large-12"><a target="_blank" class="help-sharing__link" href="https://www.twitter.com/home?status=@Ateneomolina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode }}%20{{ base_url }}/node/{{ node.id }}">
+        <div class="column small-8 large-12">
+          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Twitter" href="https://www.twitter.com/home?status=@Ateneomolina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode }}%20{{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <span class="show-for-large">Difúndelo con un tuit </span>
           </a></div>
-        <div class="column small-8 hide-for-large"><a class="help-sharing__link" href="whatsapp://send?text=El%20Ateneo%20de%20Molina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode}}%20{{ base_url }}/node/{{ node.id }}">
+        <div class="column small-8 hide-for-large">
+          <a class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Whatsapp" href="whatsapp://send?text=El%20Ateneo%20de%20Molina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode}}%20{{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </a></div>
       </div>
