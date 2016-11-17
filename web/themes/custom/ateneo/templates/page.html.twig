@@ -48,14 +48,14 @@
   <div class="slide-menu__close js-hide-overlay"><a><i class="fa fa-close"></i> Cerrar</a></div>
   <ul>
     <li><a href="/actividades">Actividades<i class="fa fa-angle-right"></i></a></li>
-    <li><a class="js-show-follow-us ga-event" data-category="Clicks" data-action="Síguenos" data-label="Menu móvil">Avísame por e-mail<i class="fa fa-angle-right"></i></a></li>
+    <li><a class="js-show-follow-us ga-event" data-category="Contacto" data-action="Síguenos" data-label="Menu móvil">Avísame por e-mail<i class="fa fa-angle-right"></i></a></li>
     <li><a href="/que-es-el-ateneo">Qué es el Ateneo<i class="fa fa-angle-right"></i></a></li>
     <!--<li><a href="">Colabora con el Ateneo<i class="fa fa-angle-right"></i></a></li>-->
   </ul>
   <div class="slide-menu__social">
     <p>Síguenos</p>
-    <a  target="_blank" href="http://fb.com/ateneomolina" class="fa fa-facebook-square"></a>
-    <a  target="_blank" href="http://twitter.com/ateneomolina"  class="fa fa-twitter-square"></a>
+    <a  target="_blank" href="http://fb.com/ateneomolina" class="fa fa-facebook-square ga-event" data-category="Contacto" data-action="Facebook" data-label="Menú móvil"></a>
+    <a  target="_blank" href="http://twitter.com/ateneomolina"  class="fa fa-twitter-square ga-event" data-category="Contacto" data-action="Twitter" data-label="Menú móvil"></a>
   </div>
 </div>
 <div class="layout-container">
@@ -73,11 +73,11 @@
         <ul class="header__nav column show-for-large">
           <li><a href="/actividades" class="header__nav__item">Actividades</a></li>
           <li><a  href="/que-es-el-ateneo" class="header__nav__item ">Qué es el Ateneo</a></li>
-          <li><a href="javascript:void(0)" class="button button--small secondary js-show-follow-us ga-event" data-category="Clicks" data-action="Síguenos" data-label="Header">Síguenos</a></li>
+          <li><a href="javascript:void(0)" class="button button--small secondary js-show-follow-us ga-event" data-category="Contacto" data-action="Síguenos" data-label="Header">Síguenos</a></li>
         </ul>
       </div>
 
-      <a class="fa fa-bars header__burger hide-for-large js-show-menu ga-event" data-category="Clicks" data-action="Abrir menú móvil" data-label="Burger" aria-hidden="true"></a>
+      <a class="fa fa-bars header__burger hide-for-large js-show-menu ga-event" data-category="Navegación" data-action="Abrir menú móvil" data-label="Burger" aria-hidden="true"></a>
 
     </div>
     {% if is_front %}
@@ -122,9 +122,9 @@
     <div class="row">
       <div class="columns large-8">
         <h3>Ponte en contacto</h3>
-        <p><a href="mailto:ateneomolinadesegura@gmail.com">Por Email</a></p>
-        <p><a href="http://fb.com/ateneomolina" target="_blank">A través de Facebook</a></p>
-        <p><a href="https://twitter.com/ateneomolina" target="_blank">A través de Twitter</a></p>
+        <p><a href="mailto:ateneomolinadesegura@gmail.com" target="_blank" class="ga-event" data-category="Contacto" data-action="Email" data-label="Footer">Por Email</a></p>
+        <p><a href="http://fb.com/ateneomolina" target="_blank" class="ga-event" data-category="Contacto" data-action="Facebook" data-label="Footer">A través de Facebook</a></p>
+        <p><a href="https://twitter.com/ateneomolina" target="_blank" class="ga-event" data-category="Contacto" data-action="Twitter" data-label="Footer">A través de Twitter</a></p>
       </div>
 
     </div>

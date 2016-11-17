@@ -84,6 +84,29 @@
           'label': tag.data('label')
         });
       });
+
+      $('.extra-link').click(function (e) {
+        var tag = $(this);
+        window.dataLayer = window.dataLayer || []
+        dataLayer.push({
+          'event': 'ga-event',
+          'category': "Actividad",
+          'action': "Enlaces",
+          'label': "Listado"
+        });
+      });
+
+      $('.js-form-submit').click(function (e) {
+        var tag = $(this);
+        window.dataLayer = window.dataLayer || []
+        dataLayer.push({
+          'event': 'ga-event',
+          'category': "Contacto",
+          'action': "Subscripción",
+          'label': "Pop-up"
+        });
+      });
+
     }
   };
 
