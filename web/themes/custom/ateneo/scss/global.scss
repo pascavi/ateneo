@@ -78,6 +78,14 @@ main{
   padding-bottom:2em;
 }
 
+.bg-grey{
+  padding:2em 0 3em;
+  background:#F5F5F5;
+}
+
+.more-activities{
+  text-align:center;
+}
 
 @include breakpoint(medium) {
   .button{
@@ -90,6 +98,7 @@ main{
   }
 
 }
+
 
 
 .page-node-type-actividad main, .path-frontpage main{

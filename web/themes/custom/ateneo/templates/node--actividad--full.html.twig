@@ -120,8 +120,11 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div class="row where-when">
       <div class="column">
 
-        <a target="_blank" class="button secondary" href="https://www.google.ie/maps/place/BMN+CAJAMURCIA+Oficina+20/@38.0518803,-1.2123226,18z/data=!4m8!1m2!2m1!1scaja+murcia+molina+de+segura!3m4!1s0x0:0xef624d00d4396a38!8m2!3d38.0519732!4d-1.2123679"><i class="fa fa-map-marker" aria-hidden="true"></i> Cómo llegar</a>
-        <a class="button js-show-follow-us ga-event" data-category="Clicks" data-action="Síguenos" data-label="Recuérdame actividad"><i class="fa fa-bell-o" aria-hidden="true"></i> Recuérdamelo</a>
+        <a target="_blank" class="button secondary"
+           href="https://www.google.ie/maps/place/BMN+CAJAMURCIA+Oficina+20/@38.0518803,-1.2123226,18z/data=!4m8!1m2!2m1!1scaja+murcia+molina+de+segura!3m4!1s0x0:0xef624d00d4396a38!8m2!3d38.0519732!4d-1.2123679"><i
+            class="fa fa-map-marker" aria-hidden="true"></i> Cómo llegar</a>
+        <a class="button js-show-follow-us ga-event" data-category="Clicks" data-action="Síguenos"
+           data-label="Recuérdame actividad"><i class="fa fa-bell-o" aria-hidden="true"></i> Recuérdamelo</a>
       </div>
     </div>
   </aside>
@@ -142,33 +145,45 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     <div class="column medium-15 large-18">
       <div class="row help-sharing__links">
         <div class="column small-8 large-12">
-          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Facebook" data href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}/node/{{ node.id }}">
+          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks"
+             data-action="Compartir actividad" data-label="Facebook" data
+             href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <span class="show-for-large">Compártelo en Facebook</span>
           </a></div>
         <div class="column small-8 large-12">
-          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Twitter" href="https://www.twitter.com/home?status=@Ateneomolina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode }}%20{{ base_url }}/node/{{ node.id }}">
+          <a target="_blank" class="help-sharing__link ga-event" data-category="Clicks"
+             data-action="Compartir actividad" data-label="Twitter"
+             href="https://www.twitter.com/home?status=@Ateneomolina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode }}%20{{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <span class="show-for-large">Difúndelo con un tuit </span>
           </a></div>
         <div class="column small-8 hide-for-large">
-          <a class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad" data-label="Whatsapp" href="whatsapp://send?text=El%20Ateneo%20de%20Molina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode}}%20{{ base_url }}/node/{{ node.id }}">
+          <a class="help-sharing__link ga-event" data-category="Clicks" data-action="Compartir actividad"
+             data-label="Whatsapp"
+             href="whatsapp://send?text=El%20Ateneo%20de%20Molina%20organiza:%20{{ content.field_tipo_de_actividad[0]['#title'] }},%20{{ title | url_encode }}%20{{ base_url }}/node/{{ node.id }}">
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
           </a></div>
       </div>
     </div>
   </div>
 </div>
-<div class="extra-links">
-  <div class="row">
-    <div class="column extra-links__intro">
-      {{ content.field_enlaces_intro }}
+<div class="bg-grey">
+  <div class="extra-links">
+    <div class="row">
+      <div class="column extra-links__intro">
+        {{ content.field_enlaces_intro }}
+      </div>
     </div>
+    <div class="row">
+      <div class="extra-links-list">
+        {{ content.field_enlaces }}
+      </div>
+    </div>
+
   </div>
-  <div class="row">
-    <div class="extra-links-list">
-      {{ content.field_enlaces }}
-    </div>
+  <div class="more-activities hide-for-large">
+    <a href="/actividades" class="button">Más actividades del Ateneo</a>
   </div>
 </div>
 
