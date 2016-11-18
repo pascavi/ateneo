@@ -147,7 +147,7 @@ view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
         <div class="column small-8 large-12">
           <a target="_blank" class="help-sharing__link ga-event" data-category="Compartir"
              data-action="Actividad" data-label="Facebook" data
-             href="https://www.facebook.com/sharer/sharer.php?u={{ path('entity.node.canonical', {'node': node.id}) }}">
+             href="https://www.facebook.com/sharer/sharer.php?u={{ base_url }}{{ path('entity.node.canonical', {'node': node.id}) }}">
             <i class="fa fa-facebook" aria-hidden="true"></i>
             <span class="show-for-large">Compártelo en Facebook</span>
           </a></div>
