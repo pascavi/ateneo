@@ -37,10 +37,11 @@ function ateneo_preprocess_node(&$variables) {
            $variables['content']['banner'] = ImageStyle::load('banner')->buildUrl($variables['node']->field_imagen->entity->getFileUri());
            $variables['base_url'] = $GLOBALS['base_url'];
            $variables['title'] = $variables['node']->title->value;
-          // kint($variables['node']);
+
+          $variables['short_date'] = $short_date= \Drupal::service('date.formatter')->format($fecha,'','D j M');
            //$variables['content']['share']=  $variables['content']['field_subtitulo'][0]['#plain_text'].' '.$format_date($fecha, 'long');
             //kint($variables['node']);
-            $path = urlencode($GLOBALS['base_url'].\Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$variables['node']->id(), 'es'));
+            //$path = urlencode($GLOBALS['base_url'].\Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$variables['node']->id(), 'es'));
             //kint($path);
 
         break;
