@@ -83,7 +83,7 @@ header h1{
 }
 
 .header__bottom .button{
-  margin:0.5em 0 1em;
+  margin:0 0 1em;
 }
 
 .header__burger{
@@ -121,6 +121,10 @@ header h1{
   .header__bottom{
     font-size:1.1rem;
     padding:15px 0;
+  }
+
+  .header__bottom .button{
+    margin:0.5em 0 1em;
   }
 
   .header__bottom__right{
