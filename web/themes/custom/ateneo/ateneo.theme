@@ -39,6 +39,9 @@ function ateneo_preprocess_node(&$variables) {
            $variables['title'] = $variables['node']->title->value;
 
           $variables['short_date'] = $short_date= \Drupal::service('date.formatter')->format($fecha,'','D j M');
+          //kint($variables['content']['field_google_maps'][0]);
+           if(isset($variables['content']['field_google_maps'][0]['#title']))
+           $variables['google_maps'] = $variables['content']['field_google_maps'][0]['#title'];
            //$variables['content']['share']=  $variables['content']['field_subtitulo'][0]['#plain_text'].' '.$format_date($fecha, 'long');
             //kint($variables['node']);
             //$path = urlencode($GLOBALS['base_url'].\Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$variables['node']->id(), 'es'));
