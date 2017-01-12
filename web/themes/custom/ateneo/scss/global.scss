@@ -142,6 +142,8 @@ main{
 }
 
 
+
+
 .actividad{
   overflow:hidden;
   max-width:400px;
@@ -160,8 +162,9 @@ main{
   height:auto;
 }
 @include breakpoint(medium) {
-  .actividad{
-    float:left;
+
+  .view-actividades .views-row{
+    float:left!important;
   }
 
   .view-actividades .views-row:nth-child(2n+1){

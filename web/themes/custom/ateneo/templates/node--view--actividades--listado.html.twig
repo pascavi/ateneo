@@ -72,19 +72,11 @@
 #}
 
 {% set classes = [
-'column',
-'medium-12',
-'large-8',
 'actividad'
 ] %}
 {{ attach_library('classy/node') }}
-
-<article{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-
-
-
-
+  <article{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
 
     {% if node.isPublished() %}
       <a href="{{ url }}" rel="bookmark">{{ content.field_imagen }} <h3{{ title_attributes }}> {{ label }}</h3></a>
@@ -93,16 +85,13 @@
     {% endif %}
 
 
-  {% if not node.isPublished() %}
-    <p>{{ content.field_subtitulo}} <strong>(En Preparación)</strong></p>
-  {% else %}
-    <p>{{ content.field_subtitulo }}</p>
-  {% endif %}
-  <p>{{ content.field_fecha }}</p>
+    {% if not node.isPublished() %}
+      <p>{{ content.field_subtitulo }} <strong>(En Preparación)</strong></p>
+    {% else %}
+      <p>{{ content.field_subtitulo }}</p>
+    {% endif %}
+    <p>{{ content.field_fecha }}</p>
 
 
-
-
-  {{ title_suffix }}
-</article>
-
+    {{ title_suffix }}
+  </article>

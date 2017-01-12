@@ -29,6 +29,7 @@ set  is_foundation_row = view.id=='actividades' ?  1: 0
   {%
     set row_classes = [
       default_row_class ? 'views-row',
+      is_foundation_row ? 'column medium-12 large-8',
     ]
   %}
   <div{{ row.attributes.addClass(row_classes) }}>
