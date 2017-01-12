@@ -1,14 +1,14 @@
 
 
 .footer{
-  height:200px;
+  min-height:200px;
   border-top:3px $primary-color solid;
   box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.3);
   background:hsla(200,44%,95%,1);
 }
 
 .footer{
-  padding:40px 0 10px;
+  padding:10px 0;
 }
 
 .footer p{
@@ -17,6 +17,7 @@
 
 .footer h3{
   color:#456;
+  margin:1.5em 0 1em;
 }
 
 .footer a{
@@ -31,9 +32,21 @@
   text-align:center;
 }
 
+.footer .fa{
+  margin-right:30px;
+  font-size:40px;
+}
+
+.footer .fa-envelope{
+  font-size:30px;
+  position:relative;
+  top:-5px;
+}
+
 @include breakpoint(medium) {
   .footer{
-    background:hsla(200,44%,95%,1) url(/themes/custom/ateneo/images/logo_azul.png) no-repeat right -200px top -150px;
+    /*background:hsla(200,44%,95%,1) url(/themes/custom/ateneo/images/logo_azul.png) no-repeat right -200px top -150px;*/
+
     background-size: 500px;
   }
 
@@ -45,7 +58,7 @@
 
 @include breakpoint(large) {
   .footer{
-    background-position: right -130px top -150px
+
     /* background-position: right -150px top -170px;
      background-size: 600px;*/
   }
