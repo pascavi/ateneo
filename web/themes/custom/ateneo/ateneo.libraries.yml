@@ -4,7 +4,7 @@ base:
     js/global.js: {}
 
   css:
-    components:
+    component:
       css/global.css: {}
 
   dependencies:
